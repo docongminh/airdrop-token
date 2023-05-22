@@ -157,7 +157,7 @@ export async function transferToken(
   const associatedAcccountInstruction: TransactionInstruction[] = [];
   if (!info.value) {
     const ins = createAssociatedTokenAccountInstruction(
-      order.to,
+      order.from,
       toAssociatedTokenAccount,
       order.to,
       mintAddress

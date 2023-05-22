@@ -10,7 +10,7 @@ import { loadKeyPair, validAddress, validateJsonData } from "./utils";
 
   const connection = new Connection(process.env.RPC_URL!);
   const receivers: any[] = require(process.env.AIRDROP_DATA!);
-  const keypair = loadKeyPair(process.env.PRIVATE_KEY_PATH!);
+  const keypair = loadKeyPair(process.env.PRIVATE_KEY!);
 
   // check valid address
   validAddress(receivers);
